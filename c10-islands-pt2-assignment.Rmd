@@ -53,6 +53,9 @@ library(rsample)
 
 While you provided this plan in c08 (Part 1), please include your plan here. In particular, describe how you updated your plan in response to feedback.
 
+
+
+
 #### Population
 
 - (What population are you going to study?)
