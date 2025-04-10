@@ -91,10 +91,39 @@ The Islands allows you to ask islanders to complete tasks. If you just take meas
 - (For experiments only: How will you ensure any effects you observe are due to the treatment, and not due to other factors?)
 - (How will you choose your sample size?)
   - This should be a mix of how confident you want to be in your results, and what is actually *feasible* for your research team.
+  
+```{r}
+## Select a random sample of houses
+n_houses <- 450
+n_sample <- 30
+
+set.seed(101)   # Set a seed for reproducibility
+
+df_numbers_random <- 
+  tibble(
+    house = sample(
+        1:n_houses,     # All integers from 1 to n_houses
+        n_sample,       # Size of our sample
+        replace = FALSE # Sample *WITHOUT* replacement
+      )
+  ) %>% 
+  # Arrange for our data collection convenience
+  arrange(house)
+
+# Pull the column so we can list just the house numbers
+df_numbers_random %>% 
+  pull(house)
+```
+  
 
 ### __q2__ EDA
 
 Conduct an EDA on your data. Add as many code chunks as you need. Ensure your EDA gives enough context of the data for us to understand what comes next in this report.
+
+```{r}
+
+```
+
 
 ### __q3__ Key Analyses
 
