@@ -123,11 +123,34 @@ Conduct an EDA on your data. Add as many code chunks as you need. Ensure your ED
 ```{r}
 # Load the data CSV
 
-filename <- "/c10-islands-pt2-data"
+filename <- "./c10-islands-pt2-data.csv"
 df_reaction <- read_csv(filename)
 
+```
+
+```{r}
+# EDA
+
+df_eda <- df_reaction %>% 
+  na.omit %>% 
+  mutate(
+    delta_bac = `B.A.C. After 5 mins (g/dL)` - `B.A.C Before (g/dL)`,
+    delta_react = `Reaction Time After 5 mins` - `Reaction Time Before (cm)`
+    ) 
+
+df_eda %>% 
+  ggplot(aes(x = delta_bac, y = delta_react, color = `Weight (kg)`)) +
+  geom_point() +
+  geom_smooth(method = lm, se = FALSE) +
+  labs(
+  title = "Change in Blood Alcohol Content (BAC) Versus Reaction Time",
+  x = "Change in Reaction Time (cm)",
+  y = "Change in Blood Alcohol Content (BAC) (g/dL)"
+  ) +
+  scale_colour_gradientn(colours = terrain.colors(10))
 
 ```
+
 
 
 ### __q3__ Key Analyses
