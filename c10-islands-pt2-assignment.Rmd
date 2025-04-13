@@ -127,7 +127,6 @@ filename <- "./c10-islands-pt2-data.csv"
 df_reaction <- read_csv(filename)
 
 ```
-
 ```{r}
 # EDA
 
@@ -139,18 +138,57 @@ df_eda <- df_reaction %>%
     ) 
 
 df_eda %>% 
-  ggplot(aes(x = delta_bac, y = delta_react, color = `Weight (kg)`)) +
+  ggplot(aes(x = delta_bac, y = delta_react)) +
   geom_point() +
   geom_smooth(method = lm, se = FALSE) +
   labs(
   title = "Change in Blood Alcohol Content (BAC) Versus Reaction Time",
-  x = "Change in Reaction Time (cm)",
-  y = "Change in Blood Alcohol Content (BAC) (g/dL)"
+  x = "Change in Blood Alcohol Content (BAC) (g/dL)",
+  y = "Change in Reaction Time (cm)"
   ) +
   scale_colour_gradientn(colours = terrain.colors(10))
 
 ```
 
+```{r}
+df_eda %>% 
+  # coloring points 
+  ggplot(aes(x = delta_bac, y = delta_react, color = `Weight (kg)`)) +
+  geom_point() +
+  geom_smooth(method = lm, se = FALSE) +
+  labs(
+  title = "Change in Blood Alcohol Content (BAC) Versus Reaction Time",
+  x = "Change in Blood Alcohol Content (BAC) (g/dL)",
+  y = "Change in Reaction Time (cm)"
+  ) +
+  scale_colour_gradientn(colours = terrain.colors(10))
+```
+
+```{r}
+df_eda %>% 
+  # coloring points 
+  ggplot(aes(x = `Weight (kg)`, y = delta_bac)) +
+  geom_point() +
+  labs(
+  title = "Change in Blood Alcohol Content (BAC) Versus Reaction Time",
+  x = "Weight (kg)",
+  y = "Change in Blood Alcohol Content (BAC) (g/dL)"
+  ) +
+  scale_colour_gradientn(colours = terrain.colors(10))
+```
+
+```{r}
+df_eda %>% 
+  # coloring points 
+  ggplot(aes(x = Age, y = delta_react)) +
+  geom_point() +
+  labs(
+  title = "Change in Blood Alcohol Content (BAC) Versus Reaction Time",
+  x = "Weight (kg)",
+  y = "Change in Reaction Time (cm)"
+  ) +
+  scale_colour_gradientn(colours = terrain.colors(10))
+```
 
 
 ### __q3__ Key Analyses
