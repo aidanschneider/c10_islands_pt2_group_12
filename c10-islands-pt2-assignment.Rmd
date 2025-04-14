@@ -1,7 +1,7 @@
 ---
 title: "The Islands, Part 2: Study"
-author: "(Your name here)"
-date: 202X-XX-XX
+author: "Aidan Schneider, Danny Kennen, Bhargavi Deshpand, Esther Aduamah, Elisa Camacho"
+date: 2025-4-13
 output:
   github_document:
     toc: true
