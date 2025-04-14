@@ -24,7 +24,7 @@ Unlike exercises, **challenges will be graded**. The following rubrics define ho
 ## Individual
 <!-- ------------------------- -->
 
-| Category | Needs Improvement | Satisfactory |
+| Category | Needs Improvement | Satisfactory | 
 |----------|----------------|--------------|
 | Effort | Some task __q__'s left unattempted | All task __q__'s attempted |
 | Observed | Did not document observations, or observations incorrect | Documented correct observations based on analysis |
@@ -249,6 +249,6 @@ In Figure 1 we see that there is a clear correlation between change in blood alc
 Connect your Key Analyses to your questions / hypotheses. What did you conclude from your study?
 
 
-We concluded that weight is more of a determining factor than age for a change in reaction time when individuals are given the same quantity of alcohol. We also saw that a higher blood alcohol concentration resulted in more of a change in reaction time. 
+We concluded that weight is more of a determining factor than age for a change in reaction time when individuals are given the same quantity of alcohol. We also saw that a higher blood alcohol concentration resulted in more of a change in reaction time.  
 
 
