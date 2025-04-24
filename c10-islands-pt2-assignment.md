@@ -143,17 +143,18 @@ consent we entered them as “NA” on our data sheet. We all recorded the
 Blood Alcohol Content (B.A.C.) and reaction time (by doing the Ruler
 Test) before and after alcohol consumption for every single person. We
 gave everyone four tequila shots back to back and waited five real-world
-minutes before checking their blood alcohol content. This is so the
-alcohol could sit for a bit and get into their systems. We then
-re-recorded their reaction time and went on to the next person in the
-household, or new house if no one else fit the requirements for our
-study.
+minutes before checking their blood alcohol content. We did this to
+ensure that the alcohol had enough time to take effect without being
+filtered out of their systems. We then re-recorded their reaction time
+and went on to the next person in the household, or new house if no one
+else fit the requirements for our study.
 
 - (How will you ensure the data is representative of your chosen
   population?)
 
-As we did a random sampling, the data is representative as we have
-thirty houses from nine to 447 all on Akkeshi Island.
+As we did a random sampling, the data is representative of the
+population of Akkeshi as we have thirty houses from nine to 447 all on
+Akkeshi Island.
 
 - (For experiments only: How will you ensure any effects you observe are
   due to the treatment, and not due to other factors?)
